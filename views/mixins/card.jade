@@ -1,0 +1,9 @@
+mixin card(title, url, x, y)
+    - var r = x / y
+    - var w = 200
+    - var h = w / r
+    .card
+        .image
+            amp-img(src = url, alt=title width=w height=h)
+        .text
+            h3= title
